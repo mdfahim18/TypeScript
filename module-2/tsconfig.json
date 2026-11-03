@@ -8,7 +8,7 @@
     "target": "esnext",
 
     "strict": true,
-    "skipLibCheck": true
-    // "moduleDetection": "force"
+    "skipLibCheck": true,
+    "moduleDetection": "force"
   }
 }
