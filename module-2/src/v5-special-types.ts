@@ -50,7 +50,7 @@ console.log(greetings);
 
 // let neverHappening: never = 'abgdhg'
 
-const getError = (msg: string) => {
-  throw new Error(msg);
-};
-const x: null = getError("abc");
+// const getError = (msg: string) => {
+//   throw new Error(msg);
+// };
+// const x: null = getError("abc");

@@ -34,7 +34,8 @@ const config: Config = {
 // const currentPort: number = config.port!
 // ekane "!" o dewa jete pare. mane must eta number
 
-const currentPort: number = config.port as number;
+const currentPort: number = config.port!;
+console.log(currentPort);
 
 // constant assertion
 const configuration = {
@@ -45,3 +46,14 @@ const configuration = {
 // configuration.port = 5000 error
 
 // kono object ke lockdown korte eta use korte pari
+
+// let x = 40 as const
+// x = 30
+
+// type Status = "pending" | "approved";
+// const status: string = "rejected";
+// const result: Status = status;
+
+// const value: unknown = 100;
+// const result = value as string;
+// console.log(result.toUpperCase());
