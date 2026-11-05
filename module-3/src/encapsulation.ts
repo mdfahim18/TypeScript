@@ -60,3 +60,16 @@ const employee2 = new Employee("Rahim", 24000);
 
 // console.log(employee.salaryWithBonus);
 console.log(employee.baseSalary);
+
+class SEmployee {
+  private _salary = 22000;
+  get salary() {
+    return this._salary;
+  }
+  set salary(value: number) {
+    this._salary = value;
+  }
+}
+const emp = new SEmployee();
+emp.salary = 30000;
+console.log(emp.salary);
