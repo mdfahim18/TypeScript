@@ -35,3 +35,12 @@ const employee2 = new Employee("Rahim", 24000);
 console.log(employee instanceof Employee); // true
 console.log(employee);
 console.log(employee2); // 2 o tate same propery
+
+class NewEmployee {
+  name = "Fahim";
+}
+
+const emp1 = new NewEmployee();
+const emp2 = new NewEmployee();
+
+console.log(emp1 === emp2); // false
