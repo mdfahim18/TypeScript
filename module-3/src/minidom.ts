@@ -51,7 +51,7 @@ class Form extends UIElement {
 
 const formElement = new Form("login-form");
 
-const nameInput = new Input("name", "email", "Enter your email");
+const nameInput = new Input("name", "name", "Enter your name");
 const emailInput = new Input("email", "email", "Enter your email");
 const passwordInput = new Input("password", "pass", "Enter your password");
 const submitButton = new Button("submit-btn", "Submit");
@@ -59,6 +59,7 @@ const submitButton = new Button("submit-btn", "Submit");
 // console.log(emailInput.render());
 // console.log(submitButton.render());
 
+formElement.appendChild(nameInput);
 formElement.appendChild(emailInput);
 formElement.appendChild(passwordInput);
 formElement.appendChild(submitButton);
