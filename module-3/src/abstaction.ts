@@ -29,14 +29,24 @@ abstract class Employee {
 class Manager extends Employee {
   calculatePay() {
     // ekane must ei method liktei hobe
-    return (this.baseSalary = 5000);
+    return this.baseSalary + 5000;
   }
 }
 class Developer extends Employee {
   calculatePay() {
-    return (this.baseSalary = 3000);
+    return this.baseSalary + 3000;
   }
 }
 
 const manager = new Manager("Fahim", 22000);
 const developer = new Developer("Rahim", 24000);
+
+abstract class Employee2 {
+  abstract calculatePay(): number;
+  abstract getResources(): string[];
+}
+
+abstract class TechnicalEmployee extends Employee2 {
+  abstract getTechStack(): string[];
+}
+//Child Class যদি নিজেই abstract হয়, তাহলে তাকে সব abstract methods implement করতে হবে না।
