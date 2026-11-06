@@ -3,6 +3,8 @@ import "./class-vs-object.js";
 import "./encapsulation.js";
 import "./inheritance.js";
 import "./polymorphism.js";
+import "./abstaction.js";
+
 // OOP ke bola hoy Programming Paradigm.
 // rogramming Paradigm mane holo amra emon kono phelosopy ba style dar korabo jar moddhe ei software ta lekbo.
 

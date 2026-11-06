@@ -53,3 +53,21 @@ console.log(manager.calculatePay());
 console.log(develoer.calculatePay(0.1));
 
 // polymorphism 2 vabe kora jay. ekta override arekta overload. ts e overload support kore na.
+
+class Employee2 {
+  calculatePay(taxRate: number): number {
+    return 22000 - 22000 * taxRate;
+  }
+}
+
+class Manager2 extends Employee2 {
+  override calculatePay(): number {
+    return 27000;
+  }
+}
+
+const manager2 = new Manager2();
+
+const employee3: Employee2 = manager2;
+
+console.log("new", employee3.calculatePay(0.1));
