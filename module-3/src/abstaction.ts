@@ -16,9 +16,11 @@ abstract class Employee {
     this._baseSalary = newSalary;
   }
 
+  salaryWithBonus() {} //eta child create korte baddho noy.
+
   abstract calculatePay(): number; // {} diye implement korte parbo na
-  abstract getResources(): string[];
-  abstract registerEntryTime(): string;
+  // abstract getResources(): string[];
+  // abstract registerEntryTime(): string;
 
   // ei class ke inherit ba extend kore sob gula sub class e egula dite hobe
   // egular bitore ki implement hocche egula niye worry na
