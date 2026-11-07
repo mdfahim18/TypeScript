@@ -27,3 +27,4 @@ import "./minidom.js";
 // * Inharitance
 // * Polymorphism
 // * Abstraction
+import "./utility-type.js";
